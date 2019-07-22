@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AboutYou from './pages/about-you'
+import MoreAboutYou from './pages/more-about-you'
+import ScrollToTop from './components/scroll-to-top'
+import Car1Lookup from './pages/car1-lookup'
+import Car1LookupB from './pages/car1-lookup-b'
+import Car1Questions from './pages/car1-questions'
+import Driver1Questions from './pages/driver1-questions'
+import './styles/global-styles.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+class Layout extends React.Component {
+  render() {
+    return(
+      <div className="container">
+        <Router>
+          <ScrollToTop>
+            <Route exact path="/" component={AboutYou} />
+            <Route path="/more-about-you" component={MoreAboutYou} />
+            <Route path="/car1-lookup" component={Car1Lookup} /> 
+            <Route path="/car1-questions" component={Car1Questions} />
+            <Route path="/driver1-questions" component={Driver1Questions} />           
+          </ScrollToTop>
+          <Route path="/car1-lookup-b" component={Car1LookupB} />
+        </ Router>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default Layout;
