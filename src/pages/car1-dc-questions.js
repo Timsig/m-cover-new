@@ -45,7 +45,7 @@ const Car1DCQuestions = () => {
           <h4>Please check the following statements</h4>
           <Qprepop
             id="regKeeper"
-            options={["Martha Baggins", "Tom Baggins"]}
+            options={["Tom Baggins", "Martha Baggins"]}
             textafter="is the registered keeper of this car."
           />
           <Qprepop
@@ -63,13 +63,7 @@ const Car1DCQuestions = () => {
             textafter="."
           />
         </section>
-        {/* <Navbutton
-          to="policy-car1done"
-          type="primary btn-block"
-          cta="Add drivers to this car"
-          className="carAssignedButton"
-          id="car2"
-        /> */}
+       
       </div>
 
       <Navbutton

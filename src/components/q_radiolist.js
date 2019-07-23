@@ -1,7 +1,7 @@
 import React from "react"
 
-const Qcheckbox = ({ id, question, options }) => (
-  <div className="qwrap qwrap-checkbox">
+const Qradio = ({ id, question, options }) => (
+  <div className="qwrap qwrap-checkbox" id={id}>
     <p className="question">{question}</p>
     {options.map(option => {
       return (
@@ -14,4 +14,4 @@ const Qcheckbox = ({ id, question, options }) => (
   </div>
 )
 
-export default Qcheckbox
+export default Qradio

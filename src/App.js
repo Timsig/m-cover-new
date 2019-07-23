@@ -77,10 +77,11 @@ class Main extends React.Component {
             <Route path="/driver2-questions-a" component={Driver2QuestionsA} />
             <Route path="/driver2-questions-b" component={Driver2QuestionsB} />
             <Route path="/car2-drivers-b" component={Car2DriversB} />
-            <Route path="./car2-dc-a" component={Car2DCA} />       
-            <Route path="./car2-dc-b" component={Car2DCB} />
-            <Route path="./car2-dc-a2" component={Car2DCA2} />
-            <Route path="./car2-dc-c" component={Car2DCC} />
+            <Route path="/car2-dc-a" component={Car2DCA} />       
+            <Route path="/car2-dc-b" component={Car2DCB} />
+            <Route path="/car2-dc-a2" component={Car2DCA2} />
+            <Route path="/car2-dc-c" component={Car2DCC} />
+            <Route path="/car2-dc-questions" component={Car2DCQuestions} />
             {/* <Route path="./the-end" component={TheEnd} /> */}
           </ScrollToTop>
           <Route path="/car1-lookup-b" component={Car1LookupB} />

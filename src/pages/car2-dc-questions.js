@@ -18,6 +18,11 @@ const Car2DCQuestions = () => {
     <div style={{ backgroundColor: '#fff', paddingBottom: '10px' }}>
       <Header image="https://res.cloudinary.com/lwcqviihu/image/upload/v1563895444/m.cover_new/car2-dc-questions_head.jpg" />
       <div className="questions-wrapper">
+        <Qselect
+          id="mainDriver"
+          question="Who will be the main driver of this car?"
+          options={["Tom Baggins", "Martha Baggins"]}
+        />
         <Qradio
           id="ncdHolder"
           question="Who will earn no claim discount on this car?"
