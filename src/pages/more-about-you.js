@@ -57,12 +57,10 @@ const MoreAboutYou = () => (
         </section>
         <Footer>
           <div className="navrow">
-            {/* <Navbutton type="primary" to="/car-build-0-0" cta="Next >" /> */}
+             <Navbutton type="primary" to="/car1-lookup" cta="Next" />
             {/* <Navbutton type="secondary" to="/" cta="< Back" /> */}
           </div>
-          <div className="saverow">
-            <h3>Click the green success button below when complete</h3>
-          </div>
+          
         </Footer>
         </div>
       </main>
