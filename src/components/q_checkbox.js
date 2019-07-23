@@ -1,6 +1,8 @@
 import React from "react"
-
-const Qcheckbox = ({ id, question, options }) => (
+import { Link } from "react-router-dom"
+const Qcheckbox = ({ id, question, options, link, linkDest }) => {
+  const theLink = link ? <Link to={linkDest}><p className='checkbox-link'>{link}</p></Link> : ""
+  return (
   <div className="qwrap qwrap-checkbox">
     <p className="question">{question}</p>
     {options.map(option => {
@@ -11,7 +13,9 @@ const Qcheckbox = ({ id, question, options }) => (
         </div>
       )
     })}
+    {theLink}
   </div>
-)
+  )
+}
 
 export default Qcheckbox

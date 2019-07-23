@@ -15,11 +15,11 @@ import Footer from "../components/footer"
 import Navbutton from "../components/molecules/navbutton"
 
 
-const Car1questions = () => {
-  
+const Car2questions = () => {
+
   return (
-    <div style={{ backgroundColor: '#fff', paddingBottom: '10px'}}>
-      <Header image="https://res.cloudinary.com/lwcqviihu/image/upload/v1563799821/m.cover_new/car1-questions_head.jpg" />
+    <div style={{ backgroundColor: '#fff', paddingBottom: '10px' }}>
+      <Header image="https://res.cloudinary.com/lwcqviihu/image/upload/v1563874296/m.cover_new/car2-questions_head.jpg" />
       <div className="questions-wrapper">
         <Qselect
           question="When was this car bought?"
@@ -111,16 +111,16 @@ const Car1questions = () => {
             options={["is", "is not"]}
             textafter="ususally kept at my home address overnight."
           />
-        </section>   
+        </section>
       </div>
       <Navbutton
-        to="/driver1-questions"
+        to="/car2-dc-a"
         type="primary btn-block"
         cta="Add this car"
         id="addCarButton1"
-      />  
+      />
     </div>
   )
 }
 
-export default Car1questions
+export default Car2questions

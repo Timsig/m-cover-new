@@ -15,19 +15,9 @@ import Qprepop from "../components/q_prepop"
 import Qnumber from "../components/q_numbuttons"
 import Footer from "../components/footer"
 import Navbutton from "../components/molecules/navbutton"
-import { checkPropTypes } from "prop-types"
 
 const Driver1questions = () => {
-  // var nextDest
-  // const currCars = localStorage.getItem("cars") || 0
-
-  // if (currCars == 0) {
-  //   nextDest = "/car-build-0-1"
-  // } else if (currCars == 1) {
-  //   nextDest = "/car-build-1-1"
-  // } else {
-  //   nextDest = "/car-build-2-1"
-  // }
+  
   return (
     <div style={{ backgroundColor: '#fff', paddingBottom: '10px' }}>
       <Header image="https://res.cloudinary.com/lwcqviihu/image/upload/v1563811023/m.cover_new/driver1-questions_head.jpg" />
@@ -67,9 +57,9 @@ const Driver1questions = () => {
       </div>
 
       <Navbutton
-        to="#"
+        to="/car1-additional-drivers"
         type="primary btn-block"
-        cta="Add this driver"
+        cta="Add driver to this car"
         id="addDriverButton"
       />
     </div>
