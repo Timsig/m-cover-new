@@ -22,7 +22,8 @@ import Car2DCC from './pages/car2-dc-c'
 import Driver2QuestionsA from './pages/driver2-questions-a'
 import Driver2QuestionsB from './pages/driver2-questions-b'
 import Car2DCQuestions from './pages/car2-dc-questions'
-import TheEnd from './pages/the-end'
+import PolicySoFar from './pages/policy-so-far'
+import Quote from './pages/quote'
 
 
 import './styles/global-styles.css'
@@ -82,10 +83,11 @@ class Main extends React.Component {
             <Route path="/car2-dc-a2" component={Car2DCA2} />
             <Route path="/car2-dc-c" component={Car2DCC} />
             <Route path="/car2-dc-questions" component={Car2DCQuestions} />
-            {/* <Route path="./the-end" component={TheEnd} /> */}
           </ScrollToTop>
           <Route path="/car1-lookup-b" component={Car1LookupB} />
           <Route path="/car2-lookup-b" component={Car2LookupB} />
+          <Route path="/policy-so-far" component={PolicySoFar} />
+          <Route path="/quote" component={Quote} />
         </ Router>
       </div>
     )

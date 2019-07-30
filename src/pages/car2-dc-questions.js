@@ -76,7 +76,7 @@ const Car2DCQuestions = () => {
       </div>
 
       <Navbutton
-        to="/theEnd"
+        to="/policy-so-far"
         type="primary btn-block"
         cta="Add driver to this car"
         id="addDriverButton"
